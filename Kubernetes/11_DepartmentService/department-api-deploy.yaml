@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: department-api-deploy
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: department-api
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: department-api
-        image: sangwon0410/department-service:3.0
+        image: sangwon0410/department-service:4.0
         resources:
           requests:
             memory: "128Mi"
