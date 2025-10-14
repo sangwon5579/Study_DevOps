@@ -3,7 +3,8 @@ kind: Service
 metadata:
   name: dapartment-api-service
 spec:
-  type: NodePort
+  # type: NodePort
+  type: ClusterIP
   selector:
     app: department-api
   ports:
